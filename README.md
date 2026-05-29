@@ -4,6 +4,17 @@
 
 **Site online (acesso remoto):** [jorgeramalho.github.io/Projeto-EDB](https://jorgeramalho.github.io/Projeto-EDB/)
 
+## Hospedagem no GitHub Pages
+
+O deploy é automático a cada `push` na branch `main`.
+
+1. Abra [Settings → Pages](https://github.com/JorgeRamalho/Projeto-EDB/settings/pages)
+2. **Build and deployment** → **Source:** escolha **Deploy from a branch**
+3. **Branch:** `gh-pages` · pasta **`/ (root)`** → **Save**
+4. Aguarde 2–5 minutos e acesse o link acima
+
+---
+
 Landing page do evento de lançamento da **English de Boteco**, com identidade visual inspirada em boteco brasileiro (verde, dourado, âmbar), tipografia contrastante, gradientes e galeria fotográfica.
 
 ## Tecnologias
