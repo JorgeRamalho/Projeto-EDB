@@ -1,5 +1,8 @@
 name: Deploy GitHub Pages
 
+# Publica em https://jorgeramalho.github.io/Projeto-EDB/
+# Requer: Settings → Pages → Source = GitHub Actions
+
 on:
   push:
     branches: [main]
