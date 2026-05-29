@@ -1,0 +1,214 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 1.5rem 4rem;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.hero__bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-hero);
+}
+
+.hero__bg-degrade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 57, 70, 0.08) 0%,
+    transparent 25%,
+    transparent 75%,
+    rgba(201, 162, 39, 0.15) 100%
+  );
+  mix-blend-mode: overlay;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  text-align: center;
+  color: var(--edb-creme);
+}
+
+.hero__logo-wrap {
+  margin-bottom: 1.25rem;
+}
+
+.hero__logo-wrap .brand-logo img {
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+}
+
+.hero__title--sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(232, 197, 71, 0.4);
+  border-radius: 999px;
+  background: rgba(15, 42, 31, 0.5);
+  backdrop-filter: blur(8px);
+  margin-bottom: 1.5rem;
+}
+
+.hero__badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--edb-vermelho-neon);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.6);
+  }
+  50% {
+    opacity: 0.85;
+    box-shadow: 0 0 0 8px rgba(230, 57, 70, 0);
+  }
+}
+
+.hero__subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.7;
+  color: rgba(245, 240, 230, 0.92);
+  max-width: 540px;
+  margin: 0 auto 2rem;
+}
+
+.hero__subtitle strong {
+  color: var(--edb-dourado-claro);
+  font-weight: 600;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.hero__btn {
+  padding: 0.9rem 1.75rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hero__btn--primary {
+  background: var(--gradient-gold);
+  color: var(--edb-verde-escuro);
+  box-shadow: var(--shadow-glow);
+}
+
+.hero__btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(201, 162, 39, 0.5);
+}
+
+.hero__btn--ghost {
+  border: 2px solid rgba(245, 240, 230, 0.6);
+  color: var(--edb-creme);
+  background: rgba(15, 42, 31, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.hero__btn--ghost:hover {
+  border-color: var(--edb-dourado);
+  color: var(--edb-dourado-claro);
+}
+
+.hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(245, 240, 230, 0.2);
+}
+
+.hero__stats dt {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--edb-dourado-claro);
+  margin-bottom: 0.25rem;
+}
+
+.hero__stats dd {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(245, 240, 230, 0.6);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, var(--edb-dourado), transparent);
+  animation: scrollLine 2s ease-in-out infinite;
+}
+
+@keyframes scrollLine {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

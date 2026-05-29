@@ -1,0 +1,108 @@
+/* —— Design tokens: English de Boteco —— */
+:root {
+  --edb-verde-escuro: #0f2a1f;
+  --edb-verde: #1a3d2e;
+  --edb-verde-medio: #2d5c47;
+  --edb-dourado: #c9a227;
+  --edb-dourado-claro: #e8c547;
+  --edb-amber: #d4842c;
+  --edb-amber-claro: #f0a84d;
+  --edb-vermelho-neon: #e63946;
+  --edb-creme: #f5f0e6;
+  --edb-creme-suave: #faf6ee;
+  --edb-marrom: #3d2914;
+  --edb-texto: #1a1612;
+  --edb-texto-suave: #4a443c;
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  --gradient-hero: linear-gradient(
+    135deg,
+    rgba(15, 42, 31, 0.92) 0%,
+    rgba(26, 61, 46, 0.78) 40%,
+    rgba(201, 162, 39, 0.35) 100%
+  );
+  --gradient-gold: linear-gradient(
+    120deg,
+    var(--edb-dourado) 0%,
+    var(--edb-amber-claro) 45%,
+    var(--edb-dourado-claro) 100%
+  );
+  --gradient-warm: linear-gradient(
+    180deg,
+    var(--edb-creme-suave) 0%,
+    #efe4cc 50%,
+    var(--edb-creme) 100%
+  );
+  --gradient-card: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(245, 240, 230, 0.9) 100%
+  );
+  --shadow-soft: 0 8px 32px rgba(26, 61, 46, 0.12);
+  --shadow-glow: 0 0 40px rgba(201, 162, 39, 0.25);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--edb-texto);
+  background: var(--edb-creme-suave);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+::selection {
+  background: var(--edb-dourado);
+  color: var(--edb-verde-escuro);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--edb-verde-escuro);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-gold);
+  border-radius: 5px;
+}
