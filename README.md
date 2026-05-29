@@ -2,6 +2,8 @@
 
 **Repositório:** [github.com/JorgeRamalho/Projeto-EDB](https://github.com/JorgeRamalho/Projeto-EDB)
 
+**Site online (acesso remoto):** [jorgeramalho.github.io/Projeto-EDB](https://jorgeramalho.github.io/Projeto-EDB/)
+
 Landing page do evento de lançamento da **English de Boteco**, com identidade visual inspirada em boteco brasileiro (verde, dourado, âmbar), tipografia contrastante, gradientes e galeria fotográfica.
 
 ## Tecnologias
