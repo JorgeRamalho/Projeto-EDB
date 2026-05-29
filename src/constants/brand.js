@@ -1,4 +1,8 @@
 /** Identidade visual — English de Boteco */
+import { assetUrl } from '../utils/assetUrl';
+
+export { assetUrl };
+
 export const BRAND = {
   name: 'English de Boteco',
   tagline: 'Chat, Fun and Beer',
@@ -6,8 +10,8 @@ export const BRAND = {
 };
 
 export const LOGO = {
-  src: '/logo-edb.png',
-  favicon: '/favicon.ico',
+  src: assetUrl('logo-edb.png'),
+  favicon: assetUrl('favicon.ico'),
   alt: 'English de Boteco — Chat, Fun and Beer',
   width: 120,
   height: 120,

@@ -1,29 +1,30 @@
 import './Experience.css';
+import { assetUrl } from '../utils/assetUrl';
 
 const STEPS = [
   {
     num: '01',
     title: 'Welcome Drink & Check-in',
     desc: 'Recepção com drinks sem álcool e credencial do evento.',
-    img: '/images/encontros/encontro-edb-1.jpg',
+    img: assetUrl('images/encontros/encontro-edb-1.jpg'),
   },
   {
     num: '02',
     title: 'Mini-aula ao vivo',
     desc: 'Demonstração da metodologia English de Boteco na prática.',
-    img: '/images/encontros/encontro-edb-2.jpg',
+    img: assetUrl('images/encontros/encontro-edb-2.jpg'),
   },
   {
     num: '03',
     title: 'English Hour no balcão',
     desc: 'Rodas de conversa temáticas com professores e convidados.',
-    img: '/images/encontros/encontro-edb-3.jpg',
+    img: assetUrl('images/encontros/encontro-edb-3.jpg'),
   },
   {
     num: '04',
     title: 'Sorteio dos ingressos',
     desc: 'Anúncio dos cadastrados contemplados com entrada gratuita.',
-    img: '/images/encontros/encontro-edb-4.jpg',
+    img: assetUrl('images/encontros/encontro-edb-4.jpg'),
   },
 ];
 

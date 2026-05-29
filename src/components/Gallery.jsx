@@ -1,33 +1,34 @@
 import './Gallery.css';
+import { assetUrl } from '../utils/assetUrl';
 
 const PHOTOS = [
   {
-    src: '/images/encontros/encontro-edb-1.jpg',
+    src: assetUrl('images/encontros/encontro-edb-1.jpg'),
     alt: 'Comunidade English de Boteco no Hopia Craft Beer',
     wide: true,
   },
   {
-    src: '/images/encontros/encontro-edb-2.jpg',
+    src: assetUrl('images/encontros/encontro-edb-2.jpg'),
     alt: 'Grupo da comunidade em encontro ao ar livre',
     wide: false,
   },
   {
-    src: '/images/encontros/encontro-edb-3.jpg',
+    src: assetUrl('images/encontros/encontro-edb-3.jpg'),
     alt: 'Noite no Boteco da Skina',
     wide: false,
   },
   {
-    src: '/images/encontros/encontro-edb-4.jpg',
+    src: assetUrl('images/encontros/encontro-edb-4.jpg'),
     alt: 'Galera celebrando no boteco',
     wide: true,
   },
   {
-    src: '/images/encontros/encontro-edb-5.jpg',
+    src: assetUrl('images/encontros/encontro-edb-5.jpg'),
     alt: 'Encontro da comunidade no Choppinho',
     wide: false,
   },
   {
-    src: '/images/encontros/encontro-edb-6.jpg',
+    src: assetUrl('images/encontros/encontro-edb-6.jpg'),
     alt: 'Comunidade reunida para a noite de inglês',
     wide: false,
   },

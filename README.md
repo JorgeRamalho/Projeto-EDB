@@ -6,10 +6,12 @@
 
 ## Hospedagem no GitHub Pages
 
-O deploy é automático a cada `push` na branch `main`.
+O deploy é automático a cada `push` na branch `main` (workflow publica em `gh-pages` com fotos, logo e favicon).
+
+**URL do site:** `https://jorgeramalho.github.io/Projeto-EDB/`
 
 1. Abra [Settings → Pages](https://github.com/JorgeRamalho/Projeto-EDB/settings/pages)
-2. **Build and deployment** → **Source:** escolha **Deploy from a branch**
+2. **Build and deployment** → **Source:** **Deploy from a branch**
 3. **Branch:** `gh-pages` · pasta **`/ (root)`** → **Save**
 4. Aguarde 2–5 minutos e acesse o link acima
 
