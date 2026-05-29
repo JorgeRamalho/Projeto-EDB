@@ -17,7 +17,7 @@ O deploy é automático a cada `push` na branch `main` (workflow publica em `gh-
 
 ---
 
-Landing page do evento de lançamento da **English de Boteco**, com identidade visual inspirada em boteco brasileiro (verde, dourado, âmbar), tipografia contrastante, gradientes e galeria fotográfica.
+Landing page do evento de lançamento da **English de Boteco**, com identidade visual em marrom amadeirado e dourado (logo), tipografia contrastante, textura de madeira e galeria com 6 fotos reais da comunidade em `public/images/encontros/`.
 
 ## Tecnologias
 
@@ -82,6 +82,15 @@ Arquivos em `public/`:
 
 Constantes centralizadas em `src/constants/brand.js`.
 
-## Imagens de fundo
+## Fotos da comunidade
 
-As fotos de ambiente usam URLs do Unsplash. Substitua por imagens reais do evento nos componentes correspondentes.
+| Arquivo | Legenda |
+|---------|---------|
+| `encontro-edb-1.jpg` | Hopia Craft Beer |
+| `encontro-edb-2.jpg` | Encontro ao ar livre |
+| `encontro-edb-3.jpg` | Boteco da Skina |
+| `encontro-edb-4.jpg` | Galera no boteco |
+| `encontro-edb-5.jpg` | Choppinho |
+| `encontro-edb-6.jpg` | Comunidade reunida |
+
+No GitHub Pages, imagens e logo usam `import.meta.env.BASE_URL` (`/Projeto-EDB/`) via `src/utils/assetUrl.js`.
