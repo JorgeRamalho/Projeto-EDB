@@ -1,19 +1,11 @@
 .about {
   padding: 6rem 1.5rem;
-  background: var(--gradient-warm);
+  background: #ffffff;
   position: relative;
 }
 
 .about::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 120px;
-  background: linear-gradient(180deg, var(--edb-verde) 0%, transparent 100%);
-  opacity: 0.15;
-  pointer-events: none;
+  display: none;
 }
 
 .about__inner {
@@ -57,10 +49,11 @@
 .about__quote {
   margin-top: 1.5rem;
   padding: 1.25rem 1.5rem;
-  background: var(--edb-verde);
-  color: var(--edb-creme);
+  background: var(--edb-creme-suave);
+  color: var(--edb-verde);
   border-radius: var(--radius-md);
   border-left: 4px solid var(--edb-dourado);
+  box-shadow: var(--shadow-soft);
 }
 
 .about__quote p {
@@ -72,7 +65,7 @@
 
 .about__quote cite {
   font-size: 0.85rem;
-  color: var(--edb-dourado-claro);
+  color: var(--edb-amber);
   font-style: normal;
 }
 
@@ -90,7 +83,7 @@
   font-family: var(--font-serif);
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   line-height: 1.25;
-  color: var(--edb-verde-escuro);
+  color: var(--edb-verde);
   margin-bottom: 1.25rem;
 }
 

@@ -7,7 +7,7 @@ export const BRAND = {
 
 export const LOGO = {
   src: '/logo-edb.png',
-  favicon: '/favicon.png',
+  favicon: '/favicon.ico',
   alt: 'English de Boteco — Chat, Fun and Beer',
   width: 120,
   height: 120,

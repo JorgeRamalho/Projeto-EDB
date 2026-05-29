@@ -2,29 +2,8 @@
   position: relative;
   padding: 6rem 1.5rem;
   min-height: 520px;
-}
-
-.register__bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.register__bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.register__bg-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    105deg,
-    rgba(15, 42, 31, 0.96) 0%,
-    rgba(26, 61, 46, 0.88) 50%,
-    rgba(61, 41, 20, 0.85) 100%
-  );
+  background-color: var(--edb-verde);
+  background-image: var(--gradient-wood), var(--texture-wood);
 }
 
 .register__inner {
@@ -118,7 +97,7 @@
 .form-field input {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 2px solid rgba(26, 61, 46, 0.15);
+  border: 2px solid rgba(139, 94, 60, 0.15);
   border-radius: var(--radius-sm);
   background: #fff;
   color: var(--edb-texto);
@@ -177,7 +156,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--edb-verde);
+  background-color: var(--edb-verde);
+  background-image: var(--gradient-wood), var(--texture-wood);
   min-height: 60vh;
 }
 

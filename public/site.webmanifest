@@ -4,21 +4,21 @@
   "description": "Lançamento oficial English de Boteco. Chat, Fun and Beer.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f2a1f",
-  "theme_color": "#1a3d2e",
+  "background_color": "#4a3224",
+  "theme_color": "#8b5e3c",
   "lang": "pt-BR",
   "icons": [
     {
-      "src": "/logo-edb.png",
-      "sizes": "512x512",
+      "src": "/favicon.png",
+      "sizes": "32x32",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon.png",
-      "sizes": "192x192",
+      "src": "/logo-edb.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ]
 }

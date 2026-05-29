@@ -166,14 +166,6 @@ export default function RegistrationForm() {
 
   return (
     <section id="cadastro" className="register" aria-labelledby="register-title">
-      <div className="register__bg" aria-hidden="true">
-        <img
-          src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200&q=80"
-          alt=""
-        />
-        <div className="register__bg-overlay" />
-      </div>
-
       <div className="register__inner">
         <div className="register__info" data-reveal="left">
           <span className="section-label section-label--light">Ingressos free</span>

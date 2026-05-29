@@ -31,10 +31,10 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <About />
-        <Experience />
         <Gallery />
         <RegistrationForm />
+        <About />
+        <Experience />
       </main>
       <Footer />
     </>

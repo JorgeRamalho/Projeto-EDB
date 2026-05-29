@@ -5,25 +5,25 @@ const STEPS = [
     num: '01',
     title: 'Welcome Drink & Check-in',
     desc: 'Recepção com drinks sem álcool e credencial do evento.',
-    img: 'https://images.unsplash.com/photo-1551024709-8f23be0a86f2?w=600&q=80',
+    img: '/images/encontros/encontro-edb-1.jpg',
   },
   {
     num: '02',
     title: 'Mini-aula ao vivo',
     desc: 'Demonstração da metodologia English de Boteco na prática.',
-    img: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80',
+    img: '/images/encontros/encontro-edb-2.jpg',
   },
   {
     num: '03',
     title: 'English Hour no balcão',
     desc: 'Rodas de conversa temáticas com professores e convidados.',
-    img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80',
+    img: '/images/encontros/encontro-edb-3.jpg',
   },
   {
     num: '04',
     title: 'Sorteio dos ingressos',
     desc: 'Anúncio dos cadastrados contemplados com entrada gratuita.',
-    img: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80',
+    img: '/images/encontros/encontro-edb-4.jpg',
   },
 ];
 

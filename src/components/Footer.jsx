@@ -3,8 +3,6 @@ import { BRAND } from '../constants/brand';
 import './Footer.css';
 
 export default function Footer() {
-  const year = new Date().getFullYear();
-
   return (
     <footer className="footer">
       <div className="footer__inner">
@@ -28,7 +26,7 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <p>© {year} {BRAND.name}. Todos os direitos reservados.</p>
+        <p>© 2023 {BRAND.name}. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

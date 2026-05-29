@@ -2,33 +2,33 @@ import './Gallery.css';
 
 const PHOTOS = [
   {
-    src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=700&q=80',
-    alt: 'Brinde entre amigos em mesa de bar',
+    src: '/images/encontros/encontro-edb-1.jpg',
+    alt: 'Comunidade English de Boteco no Hopia Craft Beer',
     wide: true,
   },
   {
-    src: 'https://images.unsplash.com/photo-1541532713592-79a031314b06?w=500&q=80',
-    alt: 'Detalhe de copos e ambiente acolhedor',
+    src: '/images/encontros/encontro-edb-2.jpg',
+    alt: 'Grupo da comunidade em encontro ao ar livre',
     wide: false,
   },
   {
-    src: 'https://images.unsplash.com/photo-1517457373958-f7b07f8f9f0c?w=500&q=80',
-    alt: 'Grupo conversando em ambiente descontraído',
+    src: '/images/encontros/encontro-edb-3.jpg',
+    alt: 'Noite no Boteco da Skina',
     wide: false,
   },
   {
-    src: 'https://images.unsplash.com/photo-1423666639041-f56000c27a93?w=700&q=80',
-    alt: 'Pessoas estudando e interagindo juntas',
+    src: '/images/encontros/encontro-edb-4.jpg',
+    alt: 'Galera celebrando no boteco',
     wide: true,
   },
   {
-    src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&q=80',
-    alt: 'Café e conversa em mesa compartilhada',
+    src: '/images/encontros/encontro-edb-5.jpg',
+    alt: 'Encontro da comunidade no Choppinho',
     wide: false,
   },
   {
-    src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=500&q=80',
-    alt: 'Celebração e pertencimento em grupo',
+    src: '/images/encontros/encontro-edb-6.jpg',
+    alt: 'Comunidade reunida para a noite de inglês',
     wide: false,
   },
 ];
