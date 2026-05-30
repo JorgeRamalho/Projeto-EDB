@@ -1,0 +1,4 @@
+# Linguagem no GitHub: versão HTML estática espelha CSS/JS da raiz.
+# Sem isto, css/style.css (~24 KB) supera o JS e o repositório aparece só como CSS.
+css/style.css linguist-vendored
+js/script.js linguist-vendored
