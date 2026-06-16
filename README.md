@@ -1,112 +1,25 @@
-# English de Boteco — Site de Lançamento
 
-**Repositório:** [github.com/JorgeRamalho/EnglishdeBoteco](https://github.com/JorgeRamalho/EnglishdeBoteco)
+📌 ## Enslish de Boteco 🍻 - Falar é divertido, tomando uma breja muito melhor
 
-**Site online (acesso remoto):** [jorgeramalho.github.io/EnglishdeBoteco](https://jorgeramalho.github.io/EnglishdeBoteco/)
+🌐 ## Website Link do projeto online 
+https://englishde-boteco.vercel.app/
 
-## Hospedagem no GitHub Pages
+📂 ## Repositório
+https://github.com//JorgeRamalho/EnglishdeBoteco
 
-O deploy é automático a cada `push` na branch `main` (workflow publica em `gh-pages` com fotos, logo e favicon).
+💻 ## Tecnologias
+Html Css JavaScript React Typescript Node.js 
 
-**URL do site:** `https://jorgeramalho.github.io/EnglishdeBoteco/`
+📲 ## Funcionalidades
+Fotos e Imaganes Vídeos Layout Website Style
 
-1. Abra [Settings → Pages](https://github.com/JorgeRamalho/EnglishdeBoteco/settings/pages)
-2. **Build and deployment** → **Source:** **Deploy from a branch**
-3. **Branch:** `gh-pages` · pasta **`/ (root)`** → **Save**
-4. Aguarde 2–5 minutos e acesse o link acima
+📠 ## Como executar git clone 
+... npm install npm run dev
 
----
+💿📄 ## Autor: Jorge R. Barbosa 
 
-Landing page do evento de lançamento da **English de Boteco**, com identidade visual em marrom amadeirado e dourado (logo), tipografia contrastante, textura de madeira e galeria com 6 fotos reais da comunidade em `public/images/encontros/`.
+💼 LinkedIn: https://www.linkedin.com/in/jorge-r-barbosa-aabb0417b/ 
 
-## Tecnologias
+👾 GitHub: https://github.com/JorgeRamalho.git 
 
-- **HTML5** semântico (`index.html`)
-- **CSS3** (variáveis, gradientes, animações, layout responsivo)
-- **React 18** + **JavaScript** (componentes, validação de formulário)
-- **Vite** (build e dev server)
-
-## Formulário de cadastro
-
-Campos: nome, data de nascimento, cidade, telefone, e-mail e endereço.
-
-Os cadastros válidos são salvos em `localStorage` (chave `edb-cadastros`) para demonstração. Em produção, conecte a um backend ou serviço de e-mail/CRM.
-
-## Como rodar
-
-### Versão HTML + CSS + JavaScript (sem React)
-
-Abra `site.html` no navegador ou use uma extensão **Live Server**:
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `style.css` | Estilos completos (importa `css/style.css`) |
-| `css/style.css` | Folha única com todo o CSS do site |
-| `script.js` | Menu, animações, validação e envio do formulário |
-| `js/script.js` | Cópia do mesmo script |
-| `site.html` | Página completa ligada aos arquivos acima |
-
-### Versão React (Vite)
-
-```bash
-npm install
-npm run dev
-```
-
-Abra o endereço exibido no terminal (geralmente `http://localhost:5173`).
-
-### Live Server (VS Code)
-
-O `index.html` da raiz é React — o Live Server não transpila JSX. Use:
-
-```bash
-npm run build
-```
-
-Depois abra `index.html` com **Open with Live Server** (redireciona para `dist/`). Para rebuild automático:
-
-```bash
-npm run live:watch
-```
-
-Ou use `npm run live` para build + preview na porta 5500.
-
-## Build para produção
-
-```bash
-npm run build
-npm run preview
-```
-
-## Estrutura
-
-```
-src/
-  components/   # Header, Hero, About, Experience, Gallery, RegistrationForm, Footer
-  styles/       # global.css, App.css
-  App.jsx
-  main.jsx
-```
-
-## Logo e favicon
-
-Arquivos em `public/`:
-
-- `logo-edb.png` — logo oficial (header, hero, rodapé, formulário)
-- `favicon.png` — ícone da aba do navegador
-- `site.webmanifest` — nome, cores e ícones para “adicionar à tela inicial”
-
-Constantes centralizadas em `src/constants/brand.js`.
-
-## Fotos da comunidade
-
-| Arquivo | Legenda |
-|---------|---------|
-| `encontro-edb-1.jpg` | Hopia Craft Beer |
-| `encontro-edb-2.jpg` | Encontro ao ar livre |
-| `encontro-edb-3.jpg` | Boteco da Skina |
-| `encontro-edb-4.jpg` | Galera no boteco |
-| `encontro-edb-5.jpg` | Choppinho |
-| `encontro-edb-6.jpg` | Comunidade reunida |
-
-No GitHub Pages, imagens e logo usam caminhos relativos via `import.meta.env.BASE_URL` em `src/utils/assetUrl.js`.
+☎️ Contato: 41 99143-4153
