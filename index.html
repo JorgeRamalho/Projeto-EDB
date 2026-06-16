@@ -24,11 +24,11 @@
       property="og:description"
       content="Chat, Fun and Beer — cadastre-se e concorra a ingressos gratuitos no lançamento."
     />
-    <meta property="og:image" content="https://jorgeramalho.github.io/Projeto-EDB/logo-edb.png" />
-    <meta property="og:url" content="https://jorgeramalho.github.io/Projeto-EDB/" />
+    <meta property="og:image" content="https://jorgeramalho.github.io/EnglishdeBoteco/logo-edb.png" />
+    <meta property="og:url" content="https://jorgeramalho.github.io/EnglishdeBoteco/" />
     <meta property="og:locale" content="pt_BR" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:image" content="https://jorgeramalho.github.io/Projeto-EDB/logo-edb.png" />
+    <meta name="twitter:image" content="https://jorgeramalho.github.io/EnglishdeBoteco/logo-edb.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,6 +39,37 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="build-hint" hidden style="max-width: 32rem; margin: 2rem auto; padding: 1.25rem; font-family: system-ui, sans-serif; line-height: 1.5;">
+      <p><strong>Build necessário.</strong> O Live Server não executa React/JSX diretamente.</p>
+      <p>Execute no terminal:</p>
+      <pre style="background: #f4f4f4; padding: 0.75rem; border-radius: 6px;">npm run build</pre>
+      <p>Depois recarregue esta página ou use <code>npm run dev</code> para desenvolvimento.</p>
+    </div>
+    <script id="live-server-redirect">
+      (function () {
+        var isViteDev = location.port === '5173';
+        var isProductionBundle = document.querySelector('script[src*="assets/index-"]');
+        var isLocalHost = /^(localhost|127\.0\.0\.1)$/i.test(location.hostname);
+
+        if (isViteDev || isProductionBundle || !isLocalHost) return;
+
+        var target = new URL('dist/index.html', location.href).href;
+        if (location.href === target) return;
+
+        fetch('dist/index.html', { method: 'HEAD' })
+          .then(function (response) {
+            if (response.ok) {
+              location.replace('dist/index.html');
+              return;
+            }
+            throw new Error('missing build');
+          })
+          .catch(function () {
+            var hint = document.getElementById('build-hint');
+            if (hint) hint.hidden = false;
+          });
+      })();
+    </script>
+    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>

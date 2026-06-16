@@ -1,16 +1,16 @@
 # English de Boteco — Site de Lançamento
 
-**Repositório:** [github.com/JorgeRamalho/Projeto-EDB](https://github.com/JorgeRamalho/Projeto-EDB)
+**Repositório:** [github.com/JorgeRamalho/EnglishdeBoteco](https://github.com/JorgeRamalho/EnglishdeBoteco)
 
-**Site online (acesso remoto):** [jorgeramalho.github.io/Projeto-EDB](https://jorgeramalho.github.io/Projeto-EDB/)
+**Site online (acesso remoto):** [jorgeramalho.github.io/EnglishdeBoteco](https://jorgeramalho.github.io/EnglishdeBoteco/)
 
 ## Hospedagem no GitHub Pages
 
 O deploy é automático a cada `push` na branch `main` (workflow publica em `gh-pages` com fotos, logo e favicon).
 
-**URL do site:** `https://jorgeramalho.github.io/Projeto-EDB/`
+**URL do site:** `https://jorgeramalho.github.io/EnglishdeBoteco/`
 
-1. Abra [Settings → Pages](https://github.com/JorgeRamalho/Projeto-EDB/settings/pages)
+1. Abra [Settings → Pages](https://github.com/JorgeRamalho/EnglishdeBoteco/settings/pages)
 2. **Build and deployment** → **Source:** **Deploy from a branch**
 3. **Branch:** `gh-pages` · pasta **`/ (root)`** → **Save**
 4. Aguarde 2–5 minutos e acesse o link acima
@@ -55,6 +55,22 @@ npm run dev
 
 Abra o endereço exibido no terminal (geralmente `http://localhost:5173`).
 
+### Live Server (VS Code)
+
+O `index.html` da raiz é React — o Live Server não transpila JSX. Use:
+
+```bash
+npm run build
+```
+
+Depois abra `index.html` com **Open with Live Server** (redireciona para `dist/`). Para rebuild automático:
+
+```bash
+npm run live:watch
+```
+
+Ou use `npm run live` para build + preview na porta 5500.
+
 ## Build para produção
 
 ```bash
@@ -93,4 +109,4 @@ Constantes centralizadas em `src/constants/brand.js`.
 | `encontro-edb-5.jpg` | Choppinho |
 | `encontro-edb-6.jpg` | Comunidade reunida |
 
-No GitHub Pages, imagens e logo usam `import.meta.env.BASE_URL` (`/Projeto-EDB/`) via `src/utils/assetUrl.js`.
+No GitHub Pages, imagens e logo usam caminhos relativos via `import.meta.env.BASE_URL` em `src/utils/assetUrl.js`.
